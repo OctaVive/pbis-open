@@ -15,3 +15,9 @@ git clone https://github.com/OctaVive/pbis-open && cd pbis-open
 
 # TO START THE SOFTWARE
 
+Navigate to the pbis-open folder you cloned.
+
+Run:
+
+./domainjoin-gui
+
