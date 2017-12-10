@@ -1,0 +1,24 @@
+#!/bin/bash
+
+echo Checking for updates...
+sleep 2s
+sudo apt-get update && sudo apt-get upgrade
+echo Installing dependencies...
+sleeps 2s
+sudo apt-get install libglade2-0
+echo Installing pbis-open...
+sleep 2
+mkdir $HOME/temp1
+cd $HOME/temp1
+wget https://github.com/BeyondTrust/pbis-open/releases/download/8.5.7/pbis-open-8.5.7.385.linux.x86_64.deb.sh
+sudo sh pbis-open-8.5.7.385.linux.x86_64.deb.sh
+sudo dpkg -i pbis-open-8.5.7.385.linux.x86_64.deb
+echo Deleting temporary files...
+sleep 2
+cd $HOME
+sudo rm -rf $HOME/temp1/*
+sudo rm -rf $HOME/temp1
+echo Done!
+exit
+
+
