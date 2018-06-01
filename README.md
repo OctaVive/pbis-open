@@ -17,7 +17,7 @@ git clone https://github.com/OctaVive/pbis-open && cd pbis-open
 --It might be possible that some dependencies are missing. Install them if required.--
 
 
-# TO START THE SOFTWARE
+# Starting the software.
 
 In the terminal, navigate to the pbis-open folder you cloned.
 
